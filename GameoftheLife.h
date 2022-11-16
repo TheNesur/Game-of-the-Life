@@ -23,14 +23,19 @@ private:
     int widgetX = 500;
     int widgetY = 500;
 
+    //QVector<QVector<int>> copyMaps(QVector<QVector<int>> oldMap, QVector<QVector<int>> newMap, int);
+
+    void checkCellule();
+    void changeForNewCellState();
+
+public:
     /*      INITIALIZATION      */
     void initializationTabMap();
     void resetMap();
 
     /*      ????        */
-    void changeForNewCellState();
     void updateMap();
+    void displayMap();
 
-    /*      OTHER       */
-    QVector<QVector<int>> copyMaps(QVector<QVector<int>> oldMap, QVector<QVector<int>> newMap, int);
+
 };
